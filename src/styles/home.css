@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background: #F1E4FF !important;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.Header {
+  width: 100%;
+  background-color: #F1E4FF;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.Footer {
+  width: 100%;
+  background-color: #F1E4FF;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto;
+}
+
+
+.home-main {
+  flex: 1;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.home-content {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+@media (min-width: 900px) {
+  .home-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+}
+
+
+.home-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-images img {
+  width: 100%;
+  min-width: 700px;
+  max-width: 1000px;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+
+.home-text {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  min-width: 700px;
+}
+
+
+.SuaMente h1 {
+  color: #000;
+  font-size: clamp(24px, 5vw, 46px);
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.SuaMente p {
+  color: #000;
+  font-family: 'Quicksand', sans-serif;
+  font-size: clamp(16px, 4vw, 27px);
+  margin-top: 10px;
+}
+
+
+.PsicologoIdeal {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+  border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+  .PsicologoIdeal {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.meditando3 img {
+  width: 100%;
+  min-width: 100px;
+  width: 200px;
+  height: auto;
+}
+
+.PsicologoIdeal-content {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .PsicologoIdeal-content {
+    text-align: right;
+  }
+}
+
+.PsicologoIdeal h2 {
+  font-size: clamp(20px, 4vw, 40px);
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.PsicologoIdeal p {
+  color: #000;
+  font-family: 'Quicksand', sans-serif;
+  font-size: clamp(14px, 3.5vw, 25px);
+  margin-top: 10px;
+}

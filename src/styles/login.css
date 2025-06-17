@@ -1,0 +1,132 @@
+.login-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  background: #e6d7ff;
+  font-family: 'Quicksand', sans-serif;
+  color: #333;
+}
+
+.login-form {
+  padding: 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.titulo {
+  margin-bottom: 4rem;
+  color: #333333;
+}
+
+.titulo h1 {
+  font-weight: 700;
+  font-size: 42px;
+}
+
+.titulo p {
+  font-weight: 400;
+  font-size: 20px;
+  display: table-row;
+  row-gap: 5px;
+  align-items: center;
+}
+
+.entrar {
+  color: #a66ed1;
+  margin-left: 5px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.login-campos p {
+  font-weight: 500;
+}
+
+.tipo-usuario select,
+.email-ou-crp input,
+.senha input {
+  flex: 1;
+  min-width: 716px;
+}
+
+.login-form input,
+.login-form select {
+  padding: 0.85rem 1rem;
+  border: 1.5px solid #cbbfff;
+  border-radius: 12px;
+  background-color: #f8f2ff;
+  font-size: 1rem;
+  color: #333333;
+  outline-offset: 2px;
+  outline-color: transparent;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  min-width: 716px;
+}
+
+.login-form input::placeholder {
+  color: #b6a4e0;
+}
+
+.login-form input:focus,
+.login-form select:focus {
+  border-color: #9880cc;
+  background-color: #fff;
+  outline-color: #a08acf;
+}
+
+.login-form button[type="submit"] {
+  min-width: 716px;
+  margin-top: 1.6rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: #AB9AB9;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button[type="submit"]:hover {
+  background-color: #574466;
+}
+
+.cadastro-link {
+  align-content: center;
+}
+
+.cadastro {
+  color: #a66ed1;
+  margin-left: 5px;
+}
+.register-image {
+  background: url('../assets/register.png') center center/cover no-repeat;
+}
+
+
+@media (max-width: 900px) {
+  .login-container {
+    grid-template-columns: 1fr;
+  }
+
+  .login-image {
+    display: none;
+  }
+
+  .login-form {
+    padding: 2rem;
+  }
+
+  .tipo-usuario select,
+  .email-ou-crp input,
+  .senha input,
+  .login-form button[type="submit"] {
+    min-width: 100%;
+  }
+}
